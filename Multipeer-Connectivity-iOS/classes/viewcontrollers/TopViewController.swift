@@ -12,6 +12,10 @@ import UIKit
 class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
 
     @IBOutlet weak var recordButton: UIButton!
+    @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var buttonsView: UIView!
+    @IBOutlet weak var makeGroupButton: UIButton!
+    @IBOutlet weak var joinGroupButton: UIButton!
 
     private let speechRecognizer: SFSpeechRecognizer? = SFSpeechRecognizer(locale: Locale(identifier: "ja-JP"))
     private var recognitionTask: SFSpeechRecognitionTask?
@@ -25,6 +29,8 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
 
         speechRecognizer?.delegate = self
         setupRecordButton()
+        setupMakeGroupButton()
+        setupJoinGroupButton()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -39,6 +45,18 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
         recordButton.layer.cornerRadius = 50
         recordButton.layer.borderColor  = UIColor.gray.cgColor
         recordButton.layer.borderWidth  = 1
+    }
+
+    private func setupMakeGroupButton() {
+        makeGroupButton.layer.cornerRadius = 5
+        makeGroupButton.layer.borderColor  = UIColor.gray.cgColor
+        makeGroupButton.layer.borderWidth  = 1
+    }
+
+    private func setupJoinGroupButton() {
+        joinGroupButton.layer.cornerRadius = 5
+        joinGroupButton.layer.borderColor  = UIColor.gray.cgColor
+        joinGroupButton.layer.borderWidth  = 1
     }
 
     private func requestAuthorization() {
