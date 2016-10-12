@@ -28,6 +28,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>ユーザーの発言を文字起こしするために利用されます。</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>ユーザーの発言を聞き取るために利用されます。</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
