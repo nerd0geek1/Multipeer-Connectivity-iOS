@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7391006C1DAE809A00B00225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006A1DAE809A00B00225 /* Main.storyboard */; };
+		7391006E1DAE809A00B00225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7391006D1DAE809A00B00225 /* Assets.xcassets */; };
+		739100711DAE809A00B00225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */; };
+		7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007B1DAE813500B00225 /* AppDelegate.swift */; };
+		7391007E1DAE814400B00225 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007D1DAE814400B00225 /* TopViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		739100631DAE809A00B00225 /* Multipeer-Connectivity-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer-Connectivity-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7391006B1DAE809A00B00225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7391006D1DAE809A00B00225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		739100701DAE809A00B00225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		739100721DAE809A00B00225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7391007B1DAE813500B00225 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7391007D1DAE814400B00225 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		739100601DAE809A00B00225 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7391005A1DAE809A00B00225 = {
+			isa = PBXGroup;
+			children = (
+				739100651DAE809A00B00225 /* Multipeer-Connectivity-iOS */,
+				739100641DAE809A00B00225 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		739100641DAE809A00B00225 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				739100631DAE809A00B00225 /* Multipeer-Connectivity-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		739100651DAE809A00B00225 /* Multipeer-Connectivity-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				739100781DAE811100B00225 /* classes */,
+				7391006A1DAE809A00B00225 /* Main.storyboard */,
+				7391006D1DAE809A00B00225 /* Assets.xcassets */,
+				7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */,
+				739100721DAE809A00B00225 /* Info.plist */,
+			);
+			path = "Multipeer-Connectivity-iOS";
+			sourceTree = "<group>";
+		};
+		739100781DAE811100B00225 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				739100791DAE811600B00225 /* application */,
+				7391007A1DAE811F00B00225 /* viewcontrollers */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		739100791DAE811600B00225 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				7391007B1DAE813500B00225 /* AppDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		7391007A1DAE811F00B00225 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				7391007D1DAE814400B00225 /* TopViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		739100621DAE809A00B00225 /* Multipeer-Connectivity-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 739100751DAE809A00B00225 /* Build configuration list for PBXNativeTarget "Multipeer-Connectivity-iOS" */;
+			buildPhases = (
+				7391005F1DAE809A00B00225 /* Sources */,
+				739100601DAE809A00B00225 /* Frameworks */,
+				739100611DAE809A00B00225 /* Resources */,
+				7391007F1DAE81A200B00225 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Multipeer-Connectivity-iOS";
+			productName = "Multipeer-Connectivity-iOS";
+			productReference = 739100631DAE809A00B00225 /* Multipeer-Connectivity-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7391005B1DAE809A00B00225 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Kohei Tabata";
+				TargetAttributes = {
+					739100621DAE809A00B00225 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 5GKRYZ5VBH;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 7391005E1DAE809A00B00225 /* Build configuration list for PBXProject "Multipeer-Connectivity-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7391005A1DAE809A00B00225;
+			productRefGroup = 739100641DAE809A00B00225 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				739100621DAE809A00B00225 /* Multipeer-Connectivity-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		739100611DAE809A00B00225 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				739100711DAE809A00B00225 /* LaunchScreen.storyboard in Resources */,
+				7391006E1DAE809A00B00225 /* Assets.xcassets in Resources */,
+				7391006C1DAE809A00B00225 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7391007F1DAE81A200B00225 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7391005F1DAE809A00B00225 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7391007E1DAE814400B00225 /* TopViewController.swift in Sources */,
+				7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7391006A1DAE809A00B00225 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7391006B1DAE809A00B00225 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				739100701DAE809A00B00225 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		739100731DAE809A00B00225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		739100741DAE809A00B00225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		739100761DAE809A00B00225 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5GKRYZ5VBH;
+				INFOPLIST_FILE = "Multipeer-Connectivity-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerd0geek1.Multipeer-Connectivity-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		739100771DAE809A00B00225 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 5GKRYZ5VBH;
+				INFOPLIST_FILE = "Multipeer-Connectivity-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.nerd0geek1.Multipeer-Connectivity-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7391005E1DAE809A00B00225 /* Build configuration list for PBXProject "Multipeer-Connectivity-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739100731DAE809A00B00225 /* Debug */,
+				739100741DAE809A00B00225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		739100751DAE809A00B00225 /* Build configuration list for PBXNativeTarget "Multipeer-Connectivity-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				739100761DAE809A00B00225 /* Debug */,
+				739100771DAE809A00B00225 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7391005B1DAE809A00B00225 /* Project object */;
+}
