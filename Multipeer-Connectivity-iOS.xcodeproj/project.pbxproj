@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		739100671DAE809A00B00225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100661DAE809A00B00225 /* AppDelegate.swift */; };
-		739100691DAE809A00B00225 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100681DAE809A00B00225 /* ViewController.swift */; };
 		7391006C1DAE809A00B00225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006A1DAE809A00B00225 /* Main.storyboard */; };
 		7391006E1DAE809A00B00225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7391006D1DAE809A00B00225 /* Assets.xcassets */; };
 		739100711DAE809A00B00225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */; };
+		7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007B1DAE813500B00225 /* AppDelegate.swift */; };
+		7391007E1DAE814400B00225 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007D1DAE814400B00225 /* TopViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		739100631DAE809A00B00225 /* Multipeer-Connectivity-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer-Connectivity-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		739100661DAE809A00B00225 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		739100681DAE809A00B00225 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7391006B1DAE809A00B00225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7391006D1DAE809A00B00225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		739100701DAE809A00B00225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		739100721DAE809A00B00225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7391007B1DAE813500B00225 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7391007D1DAE814400B00225 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +54,38 @@
 		739100651DAE809A00B00225 /* Multipeer-Connectivity-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				739100661DAE809A00B00225 /* AppDelegate.swift */,
-				739100681DAE809A00B00225 /* ViewController.swift */,
+				739100781DAE811100B00225 /* classes */,
 				7391006A1DAE809A00B00225 /* Main.storyboard */,
 				7391006D1DAE809A00B00225 /* Assets.xcassets */,
 				7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */,
 				739100721DAE809A00B00225 /* Info.plist */,
 			);
 			path = "Multipeer-Connectivity-iOS";
+			sourceTree = "<group>";
+		};
+		739100781DAE811100B00225 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				739100791DAE811600B00225 /* application */,
+				7391007A1DAE811F00B00225 /* viewcontrollers */,
+			);
+			path = classes;
+			sourceTree = "<group>";
+		};
+		739100791DAE811600B00225 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				7391007B1DAE813500B00225 /* AppDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		7391007A1DAE811F00B00225 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				7391007D1DAE814400B00225 /* TopViewController.swift */,
+			);
+			path = viewcontrollers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +98,7 @@
 				7391005F1DAE809A00B00225 /* Sources */,
 				739100601DAE809A00B00225 /* Frameworks */,
 				739100611DAE809A00B00225 /* Resources */,
+				7391007F1DAE81A200B00225 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -97,6 +122,7 @@
 					739100621DAE809A00B00225 = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = 5GKRYZ5VBH;
+						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -132,13 +158,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7391007F1DAE81A200B00225 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7391005F1DAE809A00B00225 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				739100691DAE809A00B00225 /* ViewController.swift in Sources */,
-				739100671DAE809A00B00225 /* AppDelegate.swift in Sources */,
+				7391007E1DAE814400B00225 /* TopViewController.swift in Sources */,
+				7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,11 +302,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5GKRYZ5VBH;
 				INFOPLIST_FILE = "Multipeer-Connectivity-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nerd0geek1.Multipeer-Connectivity-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -272,6 +317,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 5GKRYZ5VBH;
 				INFOPLIST_FILE = "Multipeer-Connectivity-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -300,6 +346,7 @@
 				739100771DAE809A00B00225 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
