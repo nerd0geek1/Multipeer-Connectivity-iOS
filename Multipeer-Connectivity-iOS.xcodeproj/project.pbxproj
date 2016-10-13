@@ -12,6 +12,8 @@
 		739100711DAE809A00B00225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */; };
 		7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007B1DAE813500B00225 /* AppDelegate.swift */; };
 		7391007E1DAE814400B00225 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007D1DAE814400B00225 /* TopViewController.swift */; };
+		739100831DAFC4F600B00225 /* MultipeerBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100821DAFC4F600B00225 /* MultipeerBrowser.swift */; };
+		739100851DAFC51200B00225 /* MultipeerAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		739100721DAE809A00B00225 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7391007B1DAE813500B00225 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7391007D1DAE814400B00225 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
+		739100821DAFC4F600B00225 /* MultipeerBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerBrowser.swift; sourceTree = "<group>"; };
+		739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerAdvertiser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				739100791DAE811600B00225 /* application */,
+				739100801DAFC26300B00225 /* feature */,
 				7391007A1DAE811F00B00225 /* viewcontrollers */,
 			);
 			path = classes;
@@ -86,6 +91,23 @@
 				7391007D1DAE814400B00225 /* TopViewController.swift */,
 			);
 			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		739100801DAFC26300B00225 /* feature */ = {
+			isa = PBXGroup;
+			children = (
+				739100811DAFC4E700B00225 /* p2p */,
+			);
+			path = feature;
+			sourceTree = "<group>";
+		};
+		739100811DAFC4E700B00225 /* p2p */ = {
+			isa = PBXGroup;
+			children = (
+				739100821DAFC4F600B00225 /* MultipeerBrowser.swift */,
+				739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */,
+			);
+			path = p2p;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +202,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739100851DAFC51200B00225 /* MultipeerAdvertiser.swift in Sources */,
 				7391007E1DAE814400B00225 /* TopViewController.swift in Sources */,
+				739100831DAFC4F600B00225 /* MultipeerBrowser.swift in Sources */,
 				7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
