@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -32,14 +33,56 @@
                                     <action selector="releaseButton" destination="BYZ-38-t0r" eventType="touchCancel" id="mAv-4J-Gie"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-3g-ooe">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.61099067408376961" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vO0-bJ-QIU">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI0-k9-qdi">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="fUk-D7-PKH"/>
+                                            <constraint firstAttribute="height" constant="120" id="iJP-zB-PBU"/>
+                                        </constraints>
+                                        <state key="normal" title="グループを作成"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-pp-amA">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="7EQ-I3-bcL"/>
+                                            <constraint firstAttribute="height" constant="120" id="di6-4o-FpI"/>
+                                        </constraints>
+                                        <state key="normal" title="グループに参加"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vyB-pp-amA" firstAttribute="centerX" secondItem="vO0-bJ-QIU" secondAttribute="centerX" id="FbG-Ro-fN0"/>
+                                    <constraint firstItem="MI0-k9-qdi" firstAttribute="centerX" secondItem="vO0-bJ-QIU" secondAttribute="centerX" id="TPx-up-xDe"/>
+                                    <constraint firstAttribute="bottom" secondItem="vyB-pp-amA" secondAttribute="bottom" constant="20" id="TVN-ET-R5F"/>
+                                    <constraint firstItem="MI0-k9-qdi" firstAttribute="top" secondItem="vO0-bJ-QIU" secondAttribute="top" constant="20" id="oUK-yk-vOB"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="cc7-aW-0Ky" secondAttribute="bottom" constant="40" id="07j-mO-uNZ"/>
+                            <constraint firstItem="Bua-3g-ooe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2fw-sj-y6c"/>
+                            <constraint firstItem="vO0-bJ-QIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Bfw-cD-rEQ"/>
+                            <constraint firstItem="Bua-3g-ooe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Edk-nM-bVi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vO0-bJ-QIU" secondAttribute="trailing" constant="20" id="OVZ-pC-REf"/>
+                            <constraint firstAttribute="bottom" secondItem="vO0-bJ-QIU" secondAttribute="bottom" constant="100" id="Od8-eJ-TE8"/>
+                            <constraint firstItem="vO0-bJ-QIU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Wvk-2Y-EJc"/>
                             <constraint firstItem="cc7-aW-0Ky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMy-QN-02Z"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Bua-3g-ooe" secondAttribute="bottom" id="tVM-Xk-joC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bua-3g-ooe" secondAttribute="trailing" constant="-20" id="u5s-1c-WSt"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="Bua-3g-ooe" id="mKI-Z5-JPD"/>
+                        <outlet property="buttonsView" destination="vO0-bJ-QIU" id="Hq2-Kb-URZ"/>
+                        <outlet property="joinGroupButton" destination="vyB-pp-amA" id="NUb-jA-JBI"/>
+                        <outlet property="makeGroupButton" destination="MI0-k9-qdi" id="Ne4-5c-2ad"/>
                         <outlet property="recordButton" destination="cc7-aW-0Ky" id="8Wi-iQ-sRa"/>
                     </connections>
                 </viewController>
