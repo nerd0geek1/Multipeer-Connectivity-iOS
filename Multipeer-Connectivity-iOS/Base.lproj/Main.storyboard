@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -41,26 +42,28 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MI0-k9-qdi">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="fUk-D7-PKH"/>
-                                            <constraint firstAttribute="height" constant="120" id="iJP-zB-PBU"/>
+                                            <constraint firstAttribute="width" secondItem="MI0-k9-qdi" secondAttribute="height" multiplier="1:1" id="DWN-UZ-Tot"/>
                                         </constraints>
                                         <state key="normal" title="グループを作成"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-pp-amA">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="120" id="7EQ-I3-bcL"/>
-                                            <constraint firstAttribute="height" constant="120" id="di6-4o-FpI"/>
+                                            <constraint firstAttribute="width" secondItem="vyB-pp-amA" secondAttribute="height" multiplier="1:1" id="rTo-T9-zK9"/>
                                         </constraints>
                                         <state key="normal" title="グループに参加"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="MI0-k9-qdi" firstAttribute="leading" secondItem="vO0-bJ-QIU" secondAttribute="leading" constant="20" id="1uj-Ql-NIq"/>
+                                    <constraint firstAttribute="trailing" secondItem="MI0-k9-qdi" secondAttribute="trailing" constant="20" id="850-Wt-gqI"/>
                                     <constraint firstItem="vyB-pp-amA" firstAttribute="centerX" secondItem="vO0-bJ-QIU" secondAttribute="centerX" id="FbG-Ro-fN0"/>
                                     <constraint firstItem="MI0-k9-qdi" firstAttribute="centerX" secondItem="vO0-bJ-QIU" secondAttribute="centerX" id="TPx-up-xDe"/>
                                     <constraint firstAttribute="bottom" secondItem="vyB-pp-amA" secondAttribute="bottom" constant="20" id="TVN-ET-R5F"/>
+                                    <constraint firstItem="vyB-pp-amA" firstAttribute="leading" secondItem="vO0-bJ-QIU" secondAttribute="leading" constant="20" id="lha-xo-1Jk"/>
                                     <constraint firstItem="MI0-k9-qdi" firstAttribute="top" secondItem="vO0-bJ-QIU" secondAttribute="top" constant="20" id="oUK-yk-vOB"/>
+                                    <constraint firstAttribute="trailing" secondItem="vyB-pp-amA" secondAttribute="trailing" constant="20" id="ySj-uT-5qa"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -71,8 +74,8 @@
                             <constraint firstItem="vO0-bJ-QIU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Bfw-cD-rEQ"/>
                             <constraint firstItem="Bua-3g-ooe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Edk-nM-bVi"/>
                             <constraint firstAttribute="trailingMargin" secondItem="vO0-bJ-QIU" secondAttribute="trailing" constant="20" id="OVZ-pC-REf"/>
-                            <constraint firstAttribute="bottom" secondItem="vO0-bJ-QIU" secondAttribute="bottom" constant="100" id="Od8-eJ-TE8"/>
-                            <constraint firstItem="vO0-bJ-QIU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="Wvk-2Y-EJc"/>
+                            <constraint firstAttribute="bottom" secondItem="vO0-bJ-QIU" secondAttribute="bottom" constant="20" id="Od8-eJ-TE8"/>
+                            <constraint firstItem="vO0-bJ-QIU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Wvk-2Y-EJc"/>
                             <constraint firstItem="cc7-aW-0Ky" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hMy-QN-02Z"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Bua-3g-ooe" secondAttribute="bottom" id="tVM-Xk-joC"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bua-3g-ooe" secondAttribute="trailing" constant="-20" id="u5s-1c-WSt"/>
