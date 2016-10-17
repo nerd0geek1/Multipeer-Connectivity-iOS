@@ -27,11 +27,11 @@
                                 </constraints>
                                 <state key="normal" title="録音"/>
                                 <connections>
-                                    <action selector="pressButton" destination="BYZ-38-t0r" eventType="touchDown" id="tyx-QY-quj"/>
-                                    <action selector="releaseButton" destination="BYZ-38-t0r" eventType="touchDragExit" id="Gnd-En-xQc"/>
-                                    <action selector="releaseButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJM-wA-l1o"/>
-                                    <action selector="releaseButton" destination="BYZ-38-t0r" eventType="touchDragOutside" id="kfM-63-2BV"/>
-                                    <action selector="releaseButton" destination="BYZ-38-t0r" eventType="touchCancel" id="mAv-4J-Gie"/>
+                                    <action selector="pressRecordButton" destination="BYZ-38-t0r" eventType="touchDown" id="EsL-lR-QyP"/>
+                                    <action selector="releaseRecordButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="4lt-9O-08a"/>
+                                    <action selector="releaseRecordButton" destination="BYZ-38-t0r" eventType="touchDragExit" id="NMb-E9-3Ju"/>
+                                    <action selector="releaseRecordButton" destination="BYZ-38-t0r" eventType="touchCancel" id="SWO-Tn-5X4"/>
+                                    <action selector="releaseRecordButton" destination="BYZ-38-t0r" eventType="touchUpOutside" id="xI4-Aa-uS1"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bua-3g-ooe">
@@ -45,6 +45,9 @@
                                             <constraint firstAttribute="width" secondItem="MI0-k9-qdi" secondAttribute="height" multiplier="1:1" id="DWN-UZ-Tot"/>
                                         </constraints>
                                         <state key="normal" title="グループを作成"/>
+                                        <connections>
+                                            <action selector="tapMakeGroupButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="l4l-cb-8oy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyB-pp-amA">
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,6 +55,9 @@
                                             <constraint firstAttribute="width" secondItem="vyB-pp-amA" secondAttribute="height" multiplier="1:1" id="rTo-T9-zK9"/>
                                         </constraints>
                                         <state key="normal" title="グループに参加"/>
+                                        <connections>
+                                            <action selector="tapJoinGroupButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKk-Q2-3hk"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

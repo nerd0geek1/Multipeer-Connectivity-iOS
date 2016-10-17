@@ -27,10 +27,9 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        speechRecognizer?.delegate = self
-        setupRecordButton()
-        setupMakeGroupButton()
-        setupJoinGroupButton()
+        setupSpeechRecognizer()
+        setupMultiPeerNetworking()
+        setupComponents()
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +39,32 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
     }
 
     //MARK: - private
+    //MARK: setup
+
+    private func setupSpeechRecognizer() {
+        speechRecognizer?.delegate = self
+    }
+
+    private func setupMultiPeerNetworking() {
+        MultipeerSession.sharedInstance.didEstablishConnection = {
+            DispatchQueue.main.async {
+                self.backgroundView.isHidden = true
+                self.buttonsView.isHidden = true
+            }
+        }
+        MultipeerSession.sharedInstance.didReceiveResource = { resource in
+            NSLog("resource:\(resource)")
+        }
+
+        MultipeerBrowser.sharedInstance.setup(with: MultipeerSession.sharedInstance)
+        MultipeerAdvertiser.sharedInstance.setup(with: MultipeerSession.sharedInstance)
+    }
+
+    private func setupComponents() {
+        setupRecordButton()
+        setupMakeGroupButton()
+        setupJoinGroupButton()
+    }
 
     private func setupRecordButton() {
         recordButton.layer.cornerRadius = 50
@@ -58,6 +83,8 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
         joinGroupButton.layer.borderColor  = UIColor.gray.cgColor
         joinGroupButton.layer.borderWidth  = 1
     }
+
+    //MARK: - Speech Recognizer
 
     private func requestAuthorization() {
         SFSpeechRecognizer.requestAuthorization { status in
@@ -80,7 +107,7 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
         recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { (result, error) in
             if let result = result {
                 if result.isFinal {
-                    NSLog("test:\(result.bestTranscription.formattedString)")
+                    MultipeerSession.sharedInstance.sendText(text: result.bestTranscription.formattedString)
                 }
             }
         }
@@ -117,12 +144,22 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
     //MARK: - IBAction
 
     @IBAction
-    func pressButton() {
+    func pressRecordButton() {
         startRecording()
     }
 
     @IBAction
-    func releaseButton() {
+    func releaseRecordButton() {
         stopRecording()
+    }
+
+    @IBAction
+    func tapMakeGroupButton() {
+        MultipeerBrowser.sharedInstance.startBrowsing()
+    }
+
+    @IBAction
+    func tapJoinGroupButton() {
+        MultipeerAdvertiser.sharedInstance.startAdvertising()
     }
 }
