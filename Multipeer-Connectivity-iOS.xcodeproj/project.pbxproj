@@ -16,6 +16,7 @@
 		7391007E1DAE814400B00225 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7391007D1DAE814400B00225 /* TopViewController.swift */; };
 		739100831DAFC4F600B00225 /* MultipeerBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100821DAFC4F600B00225 /* MultipeerBrowser.swift */; };
 		739100851DAFC51200B00225 /* MultipeerAdvertiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */; };
+		739100881DAFC5F300B00225 /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 739100871DAFC5F300B00225 /* MultipeerConnectivity.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		7391007D1DAE814400B00225 /* TopViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		739100821DAFC4F600B00225 /* MultipeerBrowser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerBrowser.swift; sourceTree = "<group>"; };
 		739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerAdvertiser.swift; sourceTree = "<group>"; };
+		739100871DAFC5F300B00225 /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739100881DAFC5F300B00225 /* MultipeerConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +51,7 @@
 			children = (
 				739100651DAE809A00B00225 /* Multipeer-Connectivity-iOS */,
 				739100641DAE809A00B00225 /* Products */,
+				739100861DAFC5F300B00225 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +112,20 @@
 		739100811DAFC4E700B00225 /* p2p */ = {
 			isa = PBXGroup;
 			children = (
-				739100821DAFC4F600B00225 /* MultipeerBrowser.swift */,
 				739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */,
+				739100821DAFC4F600B00225 /* MultipeerBrowser.swift */,
 				276B93081DB47596004CD44F /* MultipeerSession.swift */,
 				276B930A1DB475CA004CD44F /* MultipeerResource.swift */,
 			);
 			path = p2p;
+			sourceTree = "<group>";
+		};
+		739100861DAFC5F300B00225 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				739100871DAFC5F300B00225 /* MultipeerConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
