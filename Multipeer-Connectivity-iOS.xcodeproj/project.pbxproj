@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		276B93091DB47596004CD44F /* MultipeerSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B93081DB47596004CD44F /* MultipeerSession.swift */; };
+		276B930B1DB475CA004CD44F /* MultipeerResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276B930A1DB475CA004CD44F /* MultipeerResource.swift */; };
 		7391006C1DAE809A00B00225 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006A1DAE809A00B00225 /* Main.storyboard */; };
 		7391006E1DAE809A00B00225 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7391006D1DAE809A00B00225 /* Assets.xcassets */; };
 		739100711DAE809A00B00225 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7391006F1DAE809A00B00225 /* LaunchScreen.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		276B93081DB47596004CD44F /* MultipeerSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerSession.swift; sourceTree = "<group>"; };
+		276B930A1DB475CA004CD44F /* MultipeerResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerResource.swift; sourceTree = "<group>"; };
 		739100631DAE809A00B00225 /* Multipeer-Connectivity-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Multipeer-Connectivity-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7391006B1DAE809A00B00225 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7391006D1DAE809A00B00225 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			children = (
 				739100821DAFC4F600B00225 /* MultipeerBrowser.swift */,
 				739100841DAFC51200B00225 /* MultipeerAdvertiser.swift */,
+				276B93081DB47596004CD44F /* MultipeerSession.swift */,
+				276B930A1DB475CA004CD44F /* MultipeerResource.swift */,
 			);
 			path = p2p;
 			sourceTree = "<group>";
@@ -204,6 +210,8 @@
 			files = (
 				739100851DAFC51200B00225 /* MultipeerAdvertiser.swift in Sources */,
 				7391007E1DAE814400B00225 /* TopViewController.swift in Sources */,
+				276B93091DB47596004CD44F /* MultipeerSession.swift in Sources */,
+				276B930B1DB475CA004CD44F /* MultipeerResource.swift in Sources */,
 				739100831DAFC4F600B00225 /* MultipeerBrowser.swift in Sources */,
 				7391007C1DAE813500B00225 /* AppDelegate.swift in Sources */,
 			);
