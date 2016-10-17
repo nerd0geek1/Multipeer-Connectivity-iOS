@@ -52,6 +52,9 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
                 self.buttonsView.isHidden = true
             }
         }
+        MultipeerSession.sharedInstance.didReceiveResource = { resource in
+            NSLog("resource:\(resource)")
+        }
 
         MultipeerBrowser.sharedInstance.setup(with: MultipeerSession.sharedInstance)
         MultipeerAdvertiser.sharedInstance.setup(with: MultipeerSession.sharedInstance)
@@ -104,7 +107,7 @@ class TopViewController: UIViewController, SFSpeechRecognizerDelegate {
         recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest) { (result, error) in
             if let result = result {
                 if result.isFinal {
-                    NSLog("test:\(result.bestTranscription.formattedString)")
+                    MultipeerSession.sharedInstance.sendText(text: result.bestTranscription.formattedString)
                 }
             }
         }

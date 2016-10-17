@@ -17,6 +17,8 @@ class MultipeerSession: NSObject, MCSessionDelegate {
     let session: MCSession
 
     var didEstablishConnection: (() -> Void)?
+    var didReceiveResource: ((_ resource: MultipeerResource) -> Void)?
+
 
     //MARK: - lifecycle
 
@@ -28,6 +30,17 @@ class MultipeerSession: NSObject, MCSessionDelegate {
         self.session.delegate = self
     }
 
+    //MARK: - internal
+
+    func sendText(text: String) {
+        let dictionary: [String : Any] = ["type" : ResourceType.text.rawValue, ResourceType.text.rawValue : text]
+        guard let data: Data           = try? JSONSerialization.data(withJSONObject: dictionary, options: .prettyPrinted) else {
+            return
+        }
+
+        try? session.send(data, toPeers: session.connectedPeers, with: .reliable)
+    }
+
     //MARK: - MCSessionDelegate
 
     func session(_ session: MCSession, peer peerID: MCPeerID, didChange state: MCSessionState) {
@@ -37,6 +50,9 @@ class MultipeerSession: NSObject, MCSessionDelegate {
     }
 
     func session(_ session: MCSession, didReceive data: Data, fromPeer peerID: MCPeerID) {
+        if let resource: MultipeerResource = MultipeerResource(data: data) {
+            didReceiveResource?(resource)
+        }
     }
 
     func session(_ session: MCSession,
